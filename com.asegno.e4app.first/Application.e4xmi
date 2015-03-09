@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_eHI3oMOsEeS_NYqrLx_Neg" elementId="org.eclipse.e4.ide.application" bindingContexts="_eHI3qcOsEeS_NYqrLx_Neg">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_eHI3ocOsEeS_NYqrLx_Neg" label="com.asegno.e4app.first" width="500" height="400"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_eHI3oMOsEeS_NYqrLx_Neg" elementId="org.eclipse.e4.ide.application" bindingContexts="_eHI3qcOsEeS_NYqrLx_Neg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_eHI3ocOsEeS_NYqrLx_Neg" label="com.asegno.e4app.first" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_IP0IAMW6EeS_NYqrLx_Neg" elementId="e4app.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_Nv5FYMW6EeS_NYqrLx_Neg" elementId="e4app.perspective.0">
+        <children xsi:type="basic:PartStack" xmi:id="_WmkyMMW6EeS_NYqrLx_Neg" elementId="e4app.partstack.0">
+          <children xsi:type="basic:Part" xmi:id="_FjeTAMW5EeS_NYqrLx_Neg" elementId="com.asegno.e4app.first.part.aPart" contributionURI="bundleclass://com.asegno.e4app.first/com.asegno.e4app.first.parts.APart" label="A Part">
+            <menus xsi:type="menu:PopupMenu" xmi:id="_VnykAMXhEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.popupmenu.0">
+              <children xsi:type="menu:HandledMenuItem" xmi:id="_ZqzGcMXhEeSWW7C81lZ9hA" elementId="e4app.first.handledmenuitem.myMenuItem" label="My Menu Item"/>
+            </menus>
+          </children>
+        </children>
+      </children>
+    </children>
+    <handlers xmi:id="_qmXPsMXhEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.handler.about" contributionURI="bundleclass://com.asegno.e4app.first/com.asegno.e4app.first.handlers.AboutHandler"/>
+    <sharedElements xsi:type="basic:Part" xmi:id="_qjix8MXxEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.part.xx" label="xx">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_shQb0MXxEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.popupmenu.1">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_uXY3AMXxEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.handledmenuitem.about" label="about" command="_lmBiUMXhEeSWW7C81lZ9hA"/>
+      </menus>
+    </sharedElements>
+  </children>
   <rootContext xmi:id="_eHI3qcOsEeS_NYqrLx_Neg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_eHI3qsOsEeS_NYqrLx_Neg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_eHI3q8OsEeS_NYqrLx_Neg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <commands xmi:id="_lmBiUMXhEeSWW7C81lZ9hA" elementId="com.asegno.e4app.first.command.about" commandName="About" description="About Command"/>
   <addons xmi:id="_eHI3osOsEeS_NYqrLx_Neg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_eHI3o8OsEeS_NYqrLx_Neg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_eHI3pMOsEeS_NYqrLx_Neg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
