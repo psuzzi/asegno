@@ -26,6 +26,7 @@ import org.eclipse.jface.window.Window;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
 import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
 
 import com.asegno.e4app.first.dialogs.LoginDialog;
 
@@ -37,12 +38,6 @@ import com.asegno.e4app.first.dialogs.LoginDialog;
  **/
 @SuppressWarnings("restriction")
 public class E4LifeCycle {
-	
-	@Inject
-	IEventBroker eventBroker;
-	
-	@Inject
-	IEclipseContext workbenchContext;
 
 	/**
 	 * Note : the model has not been loaded at this point 
@@ -56,15 +51,19 @@ public class E4LifeCycle {
 	}
 
 	@ProcessAdditions
-	void processAdditions(IEclipseContext workbenchContext) {
-		final Shell shell = new Shell(SWT.TOOL|SWT.NO_TRIM);
-		LoginDialog dialog = new LoginDialog(shell);
-		ContextInjectionFactory.inject(dialog, workbenchContext);
+	void processAdditions(final IEclipseContext workbenchContext, IEventBroker eventBroker) {
+		LoginDialog dialog = ContextInjectionFactory.make(LoginDialog.class, workbenchContext);
 		if(dialog.open() != Window.OK){
 			// close application
 			System.exit(-1);
 		}
-		
+		eventBroker.subscribe(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE, new EventHandler() {
+			@Override
+			public void handleEvent(Event event) {
+				appStartupComplete(workbenchContext);	
+			}
+
+		});
 		// continue to the initial window
 	}
 
@@ -75,5 +74,11 @@ public class E4LifeCycle {
 	@Optional
 	public void applicationStartupComplete(@UIEventTopic(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE) Event event)
 	{
+		System.out.println("App startup Complete by injection");
 	}
+	
+	private void appStartupComplete(IEclipseContext workbenchContext) {
+		System.out.println("App startup Complete by registering to eventBroker");
+	}
+	
 }

@@ -33,6 +33,11 @@ public class LoginDialog extends TitleAreaDialog {
 //	@Inject
 //	EMenuService menuService;
 
+	public LoginDialog() {
+		super(null);
+	}
+	
+	@Inject
 	public LoginDialog(Shell parentShell) {
 		super(parentShell);
 	}
