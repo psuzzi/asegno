@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.asegno.e4.app.second"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.asegno.e4.app.second/css/default.css">
+         </property>
+         <property
+			name="applicationCSSResources"
+			value="platform:/plugin/com.asegno.e4.app.second/icons/">
+		</property>
+         <property
+               name="appName"
+               value="com.asegno.e4.app.second">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

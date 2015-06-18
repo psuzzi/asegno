@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mznqQBUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ide.application" bindingContexts="_mznqSRUnEeWb2sCRmV-LJw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_mznqQRUnEeWb2sCRmV-LJw" label="com.asegno.e4.app.second" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_mznqYBUnEeWb2sCRmV-LJw">
+      <children xsi:type="advanced:Perspective" xmi:id="_mznqYRUnEeWb2sCRmV-LJw">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_mznqYhUnEeWb2sCRmV-LJw" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_mzoRUBUnEeWb2sCRmV-LJw" containerData="250" selectedElement="_mzoRURUnEeWb2sCRmV-LJw">
+            <children xsi:type="basic:Part" xmi:id="_ujlKIBUoEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.part.left0"/>
+            <children xsi:type="basic:Part" xmi:id="_mzoRURUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.part.left.samplepart" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.parts.SamplePart" label="Sample Part"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_hSEQwBUoEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.partstack.0" containerData="500">
+            <children xsi:type="basic:Part" xmi:id="_jgBWEBUoEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.part.center0"/>
+            <children xsi:type="basic:Part" xmi:id="_0TnlYBVEEeWKJKbE-voH8Q" elementId="com.asegno.e4.app.second.part.center.chart" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.parts.ChartPart" label="Chart" closeable="true"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_hwbnwBUoEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.partstack.1" containerData="250">
+            <children xsi:type="basic:Part" xmi:id="_kG8MIBUoEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.part.right0"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_mznqWRUnEeWb2sCRmV-LJw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_mznqWhUnEeWb2sCRmV-LJw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mznqWxUnEeWb2sCRmV-LJw" label="Open" iconURI="platform:/plugin/com.asegno.e4.app.second/icons/sample.png" command="_mznqUBUnEeWb2sCRmV-LJw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mznqXBUnEeWb2sCRmV-LJw" label="Save" iconURI="platform:/plugin/com.asegno.e4.app.second/icons/save_edit.png" command="_mznqUxUnEeWb2sCRmV-LJw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mznqXRUnEeWb2sCRmV-LJw" label="Quit" command="_mznqTBUnEeWb2sCRmV-LJw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_mznqXhUnEeWb2sCRmV-LJw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mznqXxUnEeWb2sCRmV-LJw" label="About" command="_mznqVhUnEeWb2sCRmV-LJw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_mzoRUhUnEeWb2sCRmV-LJw">
+      <children xsi:type="menu:ToolBar" xmi:id="_mzoRUxUnEeWb2sCRmV-LJw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mzoRVBUnEeWb2sCRmV-LJw" iconURI="platform:/plugin/com.asegno.e4.app.second/icons/sample.png" command="_mznqUBUnEeWb2sCRmV-LJw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mzoRVRUnEeWb2sCRmV-LJw" iconURI="platform:/plugin/com.asegno.e4.app.second/icons/save_edit.png" command="_mznqUxUnEeWb2sCRmV-LJw"/>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_t92isBUvEeWJfMDKY860Sg" elementId="com.asegno.e4.app.second.toolcontrol.0" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.controls.OutputToolControl">
+        <tags>stretch</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_BiDmUBUpEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.trimbar.0" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_abH8MBUqEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.toolcontrol.statustoolcontrol" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.controls.StatusToolControl"/>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_mznqTRUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.handler.quitCommand" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.handlers.QuitHandler" command="_mznqTBUnEeWb2sCRmV-LJw"/>
+  <handlers xmi:id="_mznqURUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.handler.openCommand" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.handlers.OpenHandler" command="_mznqUBUnEeWb2sCRmV-LJw"/>
+  <handlers xmi:id="_mznqVBUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.handler.saveCommand" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.handlers.SaveHandler" command="_mznqUxUnEeWb2sCRmV-LJw"/>
+  <handlers xmi:id="_mznqVxUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.handler.aboutCommand" contributionURI="bundleclass://com.asegno.e4.app.second/com.asegno.e4.app.second.handlers.AboutHandler" command="_mznqVhUnEeWb2sCRmV-LJw"/>
+  <bindingTables xmi:id="_mznqThUnEeWb2sCRmV-LJw" bindingContext="_mznqSRUnEeWb2sCRmV-LJw">
+    <bindings xmi:id="_mznqTxUnEeWb2sCRmV-LJw" keySequence="M1+Q" command="_mznqTBUnEeWb2sCRmV-LJw"/>
+    <bindings xmi:id="_mznqUhUnEeWb2sCRmV-LJw" keySequence="M1+O" command="_mznqUBUnEeWb2sCRmV-LJw"/>
+    <bindings xmi:id="_mznqVRUnEeWb2sCRmV-LJw" keySequence="M1+S" command="_mznqUxUnEeWb2sCRmV-LJw"/>
+    <bindings xmi:id="_mznqWBUnEeWb2sCRmV-LJw" keySequence="M1+A" command="_mznqVhUnEeWb2sCRmV-LJw"/>
+  </bindingTables>
+  <rootContext xmi:id="_mznqSRUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_mznqShUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_mznqSxUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_mznqTBUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_mznqUBUnEeWb2sCRmV-LJw" elementId="com.asegno.e4.app.second.open" commandName="openCommand"/>
+  <commands xmi:id="_mznqUxUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_mznqVhUnEeWb2sCRmV-LJw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_mznqQhUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_mznqQxUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_mznqRBUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_mznqRRUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_mznqRhUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_mznqRxUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_mznqSBUnEeWb2sCRmV-LJw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
