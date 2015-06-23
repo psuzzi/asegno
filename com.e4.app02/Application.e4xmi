@@ -13,7 +13,7 @@
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_Y7aWMBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.partstack.2" containerData="800" selectedElement="_tNRwEBm-EeW9k9KeQzMFgA">
               <children xsi:type="basic:Part" xmi:id="_aUYUQBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.part.1"/>
-              <children xsi:type="basic:Part" xmi:id="_tNRwEBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.part.center.chart" contributionURI="bundleclass://com.e4.app02/com.e4.app02.parts.XYChartPart" label="Chart"/>
+              <children xsi:type="basic:Part" xmi:id="_tNRwEBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.part.center.chart" contributionURI="bundleclass://com.e4.app02/com.e4.app02.parts.CustomChartPart" label="Chart"/>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_ZUI_QBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.partstack.3" containerData="100">
               <children xsi:type="basic:Part" xmi:id="_aqDCQBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.part.2"/>
@@ -24,7 +24,7 @@
     </children>
     <trimBars xmi:id="_h18oQBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.trimbar.0">
       <children xsi:type="menu:ToolBar" xmi:id="_iTdqsBm6EeW9k9KeQzMFgA" elementId="com.e4.app02.toolbar.0"/>
-      <children xsi:type="menu:ToolControl" xmi:id="_lFCdoBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.toolcontrol.0"/>
+      <children xsi:type="menu:ToolControl" xmi:id="_lFCdoBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.toolcontrol.0" contributionURI="bundleclass://com.e4.app02/com.e4.app02.controls.OutputToolControl"/>
     </trimBars>
     <trimBars xmi:id="_mDH2gBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.trimbar.1" side="Bottom">
       <children xsi:type="menu:ToolControl" xmi:id="_oJ3gkBm-EeW9k9KeQzMFgA" elementId="com.e4.app02.toolcontrol.1"/>

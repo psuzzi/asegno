@@ -1,4 +1,4 @@
- 
+
 package com.e4.app02.parts;
 
 import javax.annotation.PostConstruct;
@@ -7,7 +7,6 @@ import javax.inject.Inject;
 import org.eclipse.draw2d.LightweightSystem;
 import org.eclipse.draw2d.MouseMotionListener;
 import org.eclipse.nebula.visualization.xygraph.dataprovider.CircularBufferDataProvider;
-import org.eclipse.nebula.visualization.xygraph.figures.ToolbarArmedXYGraph;
 import org.eclipse.nebula.visualization.xygraph.figures.Trace;
 import org.eclipse.nebula.visualization.xygraph.figures.Trace.PointStyle;
 import org.eclipse.nebula.visualization.xygraph.figures.XYGraph;
@@ -18,18 +17,18 @@ import org.eclipse.swt.widgets.Composite;
 import com.e4.app02.ColorConstants;
 import com.e4.app02.chart.figures.ToolbarArmedCustomChart;
 
-public class XYChartPart {
-	
+public class CustomChartPart {
+
 	public static String ELEMENT_ID = "com.e4.app02.part.center.chart";
-	
+
 	MouseMotionListener mmListener;
 	private XYGraph xyGraph;
-	
+
 	@Inject
-	public XYChartPart() {
+	public CustomChartPart() {
 		//TODO Your code here
 	}
-	
+
 	@PostConstruct
 	public void postConstruct(Composite parent) {
 		final Canvas canvas = new Canvas(parent, SWT.NONE);
@@ -39,7 +38,7 @@ public class XYChartPart {
 
 		ToolbarArmedCustomChart toolbarArmedXYGraph = new ToolbarArmedCustomChart(xyGraph);
 
-		xyGraph.setTitle("Toolbar Armed XYGraph Example");
+		xyGraph.setTitle("Toolbar Armed Custom Graph Example");
 		xyGraph.setBackgroundColor(ColorConstants.AZURE);
 		xyGraph.setForegroundColor(ColorConstants.DARK_GRAY);
 
@@ -62,8 +61,8 @@ public class XYChartPart {
 		// add the trace to xyGraph
 		xyGraph.addTrace(trace);
 	}
-	
-	
-	
-	
+
+
+
+
 }
