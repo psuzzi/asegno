@@ -6,21 +6,21 @@ import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.nebula.visualization.xygraph.figures.XYGraph;
 
-public class ToolbarArmedWwbChart extends Figure {
+public class ToolbarArmedCustomChart extends Figure {
 
 	final private XYGraph xyGraph;
-	final private WwbGraphToolbar toolbar;
+	final private CustomGraphToolbar toolbar;
 	
 	private boolean transparent;
 	private final int MARGIN = 3;
 	
-	public ToolbarArmedWwbChart() {
+	public ToolbarArmedCustomChart() {
 		this(new XYGraph());
 	}
 
-	public ToolbarArmedWwbChart(XYGraph xyGraph) {
+	public ToolbarArmedCustomChart(XYGraph xyGraph) {
 		this.xyGraph = xyGraph;
-		toolbar = new WwbGraphToolbar(this.xyGraph);
+		toolbar = new CustomGraphToolbar(this.xyGraph);
 		xyGraph.setOpaque(false);
 		toolbar.setOpaque(false);
 		add(toolbar);

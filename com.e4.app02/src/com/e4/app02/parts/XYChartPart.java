@@ -16,7 +16,7 @@ import org.eclipse.swt.widgets.Canvas;
 import org.eclipse.swt.widgets.Composite;
 
 import com.e4.app02.ColorConstants;
-import com.e4.app02.chart.figures.ToolbarArmedWwbChart;
+import com.e4.app02.chart.figures.ToolbarArmedCustomChart;
 
 public class XYChartPart {
 	
@@ -37,7 +37,7 @@ public class XYChartPart {
 
 		xyGraph = new XYGraph();
 
-		ToolbarArmedWwbChart toolbarArmedXYGraph = new ToolbarArmedWwbChart(xyGraph);
+		ToolbarArmedCustomChart toolbarArmedXYGraph = new ToolbarArmedCustomChart(xyGraph);
 
 		xyGraph.setTitle("Toolbar Armed XYGraph Example");
 		xyGraph.setBackgroundColor(ColorConstants.AZURE);

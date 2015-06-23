@@ -28,7 +28,7 @@ import org.eclipse.nebula.visualization.xygraph.util.XYGraphMediaFactory;
  * @author p.suzzi
  *
  */
-public class WwbGraphToolbar extends Figure{
+public class CustomGraphToolbar extends Figure{
 	
 	private final static int BUTTON_SIZE = 25;
 
@@ -38,7 +38,7 @@ public class WwbGraphToolbar extends Figure{
 	
 	final private Map<ZoomType, ToggleModel> zoomButtonModelMap = new HashMap<ZoomType, ToggleModel>();
 
-	public WwbGraphToolbar(final XYGraph xyGraph) {
+	public CustomGraphToolbar(final XYGraph xyGraph) {
 		this.xyGraph = xyGraph;
 		setLayoutManager(new WrappableToolbarLayout());
 		
