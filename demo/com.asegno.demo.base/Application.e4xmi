@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CVP3YBrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ide.application" bindingContexts="_CVP3aRrHEeWJbqhMv2tKWg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_CVP3YRrHEeWJbqhMv2tKWg" label="com.asegno.demo.base" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_CVP3gBrHEeWJbqhMv2tKWg">
+      <children xsi:type="advanced:Perspective" xmi:id="_CVP3gRrHEeWJbqhMv2tKWg">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_CVP3ghrHEeWJbqhMv2tKWg">
+          <children xsi:type="basic:PartStack" xmi:id="_CVP3gxrHEeWJbqhMv2tKWg">
+            <children xsi:type="basic:Part" xmi:id="_CVP3hBrHEeWJbqhMv2tKWg" contributionURI="bundleclass://com.asegno.demo.base/com.asegno.demo.base.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_CVP3eRrHEeWJbqhMv2tKWg" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_CVP3ehrHEeWJbqhMv2tKWg" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CVP3exrHEeWJbqhMv2tKWg" label="Open" iconURI="platform:/plugin/com.asegno.demo.base/icons/sample.png" command="_CVP3cBrHEeWJbqhMv2tKWg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CVP3fBrHEeWJbqhMv2tKWg" label="Save" iconURI="platform:/plugin/com.asegno.demo.base/icons/save_edit.png" command="_CVP3cxrHEeWJbqhMv2tKWg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CVP3fRrHEeWJbqhMv2tKWg" label="Quit" command="_CVP3bBrHEeWJbqhMv2tKWg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_CVP3fhrHEeWJbqhMv2tKWg" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CVP3fxrHEeWJbqhMv2tKWg" label="About" command="_CVP3dhrHEeWJbqhMv2tKWg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_CVP3hRrHEeWJbqhMv2tKWg">
+      <children xsi:type="menu:ToolBar" xmi:id="_CVP3hhrHEeWJbqhMv2tKWg" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CVP3hxrHEeWJbqhMv2tKWg" iconURI="platform:/plugin/com.asegno.demo.base/icons/sample.png" command="_CVP3cBrHEeWJbqhMv2tKWg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CVP3iBrHEeWJbqhMv2tKWg" iconURI="platform:/plugin/com.asegno.demo.base/icons/save_edit.png" command="_CVP3cxrHEeWJbqhMv2tKWg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_CVP3bRrHEeWJbqhMv2tKWg" elementId="com.asegno.demo.base.handler.quitCommand" contributionURI="bundleclass://com.asegno.demo.base/com.asegno.demo.base.handlers.QuitHandler" command="_CVP3bBrHEeWJbqhMv2tKWg"/>
+  <handlers xmi:id="_CVP3cRrHEeWJbqhMv2tKWg" elementId="com.asegno.demo.base.handler.openCommand" contributionURI="bundleclass://com.asegno.demo.base/com.asegno.demo.base.handlers.OpenHandler" command="_CVP3cBrHEeWJbqhMv2tKWg"/>
+  <handlers xmi:id="_CVP3dBrHEeWJbqhMv2tKWg" elementId="com.asegno.demo.base.handler.saveCommand" contributionURI="bundleclass://com.asegno.demo.base/com.asegno.demo.base.handlers.SaveHandler" command="_CVP3cxrHEeWJbqhMv2tKWg"/>
+  <handlers xmi:id="_CVP3dxrHEeWJbqhMv2tKWg" elementId="com.asegno.demo.base.handler.aboutCommand" contributionURI="bundleclass://com.asegno.demo.base/com.asegno.demo.base.handlers.AboutHandler" command="_CVP3dhrHEeWJbqhMv2tKWg"/>
+  <bindingTables xmi:id="_CVP3bhrHEeWJbqhMv2tKWg" bindingContext="_CVP3aRrHEeWJbqhMv2tKWg">
+    <bindings xmi:id="_CVP3bxrHEeWJbqhMv2tKWg" keySequence="M1+Q" command="_CVP3bBrHEeWJbqhMv2tKWg"/>
+    <bindings xmi:id="_CVP3chrHEeWJbqhMv2tKWg" keySequence="M1+O" command="_CVP3cBrHEeWJbqhMv2tKWg"/>
+    <bindings xmi:id="_CVP3dRrHEeWJbqhMv2tKWg" keySequence="M1+S" command="_CVP3cxrHEeWJbqhMv2tKWg"/>
+    <bindings xmi:id="_CVP3eBrHEeWJbqhMv2tKWg" keySequence="M1+A" command="_CVP3dhrHEeWJbqhMv2tKWg"/>
+  </bindingTables>
+  <rootContext xmi:id="_CVP3aRrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_CVP3ahrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_CVP3axrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_CVP3bBrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_CVP3cBrHEeWJbqhMv2tKWg" elementId="com.asegno.demo.base.open" commandName="openCommand"/>
+  <commands xmi:id="_CVP3cxrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_CVP3dhrHEeWJbqhMv2tKWg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_CVP3YhrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_CVP3YxrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_CVP3ZBrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_CVP3ZRrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_CVP3ZhrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_CVP3ZxrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_CVP3aBrHEeWJbqhMv2tKWg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

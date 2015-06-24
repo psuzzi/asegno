@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: com.asegno.demo.base.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: ASEGNO
+Fragment-Host: com.asegno.demo.base
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.junit
