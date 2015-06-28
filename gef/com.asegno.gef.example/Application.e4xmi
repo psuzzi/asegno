@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_R0jZYB25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ide.application" bindingContexts="_R0jZaR25EeWwSI1-Uh6y3g">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_R0jZYR25EeWwSI1-Uh6y3g" label="com.asegno.gef.example" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fJjroB25EeWwSI1-Uh6y3g" elementId="com.asegno.gef.example.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_hqnTIB25EeWwSI1-Uh6y3g" elementId="com.asegno.gef.example.perspective.0">
+        <children xsi:type="basic:PartStack" xmi:id="_kulacB25EeWwSI1-Uh6y3g" elementId="com.asegno.gef.example.partstack.0">
+          <children xsi:type="basic:Part" xmi:id="_llaUwB25EeWwSI1-Uh6y3g" elementId="com.asegno.gef.example.part.gefsample" contributionURI="bundleclass://com.asegno.gef.example/com.asegno.gef.example.parts.GefSamplePart" label="GEF Sample"/>
+        </children>
+      </children>
+    </children>
+  </children>
+  <rootContext xmi:id="_R0jZaR25EeWwSI1-Uh6y3g" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_R0jZah25EeWwSI1-Uh6y3g" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_R0jZax25EeWwSI1-Uh6y3g" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <addons xmi:id="_R0jZYh25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_R0jZYx25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_R0jZZB25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_R0jZZR25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_R0jZZh25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_R0jZZx25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_R0jZaB25EeWwSI1-Uh6y3g" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

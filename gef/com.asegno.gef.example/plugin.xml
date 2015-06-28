@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.asegno.gef.example"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.asegno.gef.example/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="com.asegno.gef.example">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
