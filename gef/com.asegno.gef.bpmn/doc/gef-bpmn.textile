@@ -1,0 +1,18 @@
+h1. Simple BMPN Editor with GEF
+
+Scope: Create a simple BPMN editor with Eclipse GEF
+
+h1. Model 
+
+The UML diagram below shows a very simple model
+
+!{width=32px;height=64px}img/basic-uml-diagram-gef-bpmn-schema-editor.png! 
+
+To get it in the quick and easy way, I'm using the ecore editor to generate the model classes. See "Generate ecore model classes":generate-ecore-model-classes.textile for details. 
+
+
+h2. References
+
+* "Generating an EMF model":https://www.eclipse.org/modeling/emf/docs/2.x/tutorials/clibmod/clibmod_emf2.0.html
+* "Eclipse GEF project page":https://eclipse.org/gef/
+* "bpmn quick guide":http://www.bpmnquickguide.com/viewit.html
