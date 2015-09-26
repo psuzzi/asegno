@@ -1,3 +1,7 @@
 h1. Generate Ecore Model Classes
 
 Short reference - how to generate classes using ecore model editor.
+
+h2. References
+
+* "EMF Tutorial":http://eclipsesource.com/blogs/tutorials/emf-tutorial/

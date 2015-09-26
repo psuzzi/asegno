@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book isbn="9781849511742" title="WordPress 3.0 jQuery" pdate="24/09/2010"/>
+    <book isbn="9781849511407" title="WordPress Top Plugins" pdate="21/09/2010"/>
+    <book isbn="9781847196569" title="WordPress 2.7 Complete" pdate="02/06/2009"/>
+    <book isbn="9781849510080" title="WordPress 2.8 Theme Design" pdate="30/11/2009"/>
+    <book isbn="9781847197382" title="WordPress 2.7 Cookbook" pdate="15/07/2009"/>
+    <book isbn="9781847193599" title="WordPress Plugin Development: Beginner's Guide" pdate="16/02/2009"/>
+    <book isbn="9781847198822" title="WordPress and Flash 10x Cookbook" pdate="19/04/2010"/>
+    <book isbn="9781849512367" title="Joomla! 1.5 Cookbook" pdate="26/10/2010"/>
+    <book isbn="9781849511803" title="Joomla! 1.5 Top Extensions Cookbook" pdate="18/10/2010"/>
+    <book isbn="9781849512220" title="Building job sites with Joomla!" pdate="21/09/2010"/>
+    <book isbn="9781849511704" title="Joomla! 1.5 Site Blueprints" pdate="26/05/2010"/>
+    <book isbn="9781847199904" title="Joomla! 1.5: Beginner's Guide" pdate="05/03/2010"/>
+    <book isbn="9781847195166" title="Joomla! 1.5x Customization: Make Your Site Adapt to Your Needs" pdate="24/08/2009"/>
+</books>
