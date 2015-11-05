@@ -1,0 +1,51 @@
+= JFace basics
+Patrik Suzzi <psuzzi@gmail.com>
+
+== About JFace
+JFace operates on top of SWT, providing classes and interfaces to handle many of the common task, so the developer can focus on user interface.
+
+=== Purpose
+This doc is a quick reference on how I use JFace, starting from a simple empty window, showing a simple dialog, and finally putting a list and a textbox to use as filter. 
+
+
+== Base example
+Simple way to launch a SWT Shell
+
+----
+	/** simple wayt to open shell */
+	static void openShell(){
+		Display display = new Display();
+		Shell shell = new Shell(display);
+
+		shell.setText("Simple SWT Shell");
+
+		shell.open();
+
+		// eventloop
+
+		while (!shell.isDisposed()) {
+			if(!display.readAndDispatch()){
+				// no more entries in event queue
+				display.sleep();
+			}
+		}
+
+		display.dispose();
+	}
+----
+
+
+Base exampe to launch a Composite with JFace components.
+
+
+
+TIP: 
+
+[.lead]
+This ^code^ is a #simple quickstart# 
+
+
+ 
+
+==JFace dialog example
+To 

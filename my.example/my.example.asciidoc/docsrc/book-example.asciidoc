@@ -1,0 +1,27 @@
+Book Title
+===========
+Patrik Suzzi
+v1.0 2015-11
+:doctype: book
+
+[dedication]
+
+Tho those who inspired me and those who pushed me beyond my limits.
+--------------------------------------------------------------------
+And also to those who think that knowledge feels like magic.
+
+
+[preface]
+Book Preface
+-------------
+Optional preface
+
+Preface sub-section
+~~~~~~~~~~~~~~~~~~~
+Body of subsection
+
+
+First Chapter
+-------------
+
+Each chapter can contain subsections ut to three levels depth
