@@ -1,2 +1,23 @@
-JFace Lists and filters
+= JFace Lists and filters
 
+== FilteredTree 
+
+The below listing is the core to the solution of https://bugs.eclipse.org/bugs/show_bug.cgi?id=323679[bug 323679]
+[source, java]
+----
+	protected TreeViewer createTreeViewer(Composite parent) {
+		if(this.filteringEnabled){
+			FilteredTree tree = new FilteredTree(parent, SWT.BORDER, new PatternFilter(), false);
+			// assumes parent has gridlayout
+			tree.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+			tree.setFont(parent.getFont());
+			return tree.getViewer();
+		}
+		else {
+			// not filtered, old style
+			Tree tree= new Tree(parent, getTreeStyle());
+			tree.setFont(parent.getFont());
+			return new TreeViewer(tree);
+		}
+	}
+----
