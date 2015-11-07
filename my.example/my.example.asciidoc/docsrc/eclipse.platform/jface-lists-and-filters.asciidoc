@@ -5,7 +5,7 @@
 
 Here you can see the solution of https://bugs.eclipse.org/bugs/show_bug.cgi?id=323679[bug 323679]
 
-video::img/Java_Build_Path_Filtering_Enabled_2015-11-07_0-17-43.mp4[]
+View the link:img/Java_Build_Path_Filtering_Enabled_2015-11-07_0-17-43.mp4[video of java build path with filter]
 
 The below listing is the core solution. Remind to set layout data, as FilteredTree will set his own layout data, and this could break the layout.
 
