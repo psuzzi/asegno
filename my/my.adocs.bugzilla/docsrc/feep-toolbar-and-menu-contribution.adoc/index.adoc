@@ -1,0 +1,16 @@
+= Address Outstanding Issues - ToolBar and Menu Contributions
+
+=== References
+
+* Address Outstanding Issues - ToolBar and Menu Contributions,  https://projects.eclipse.org/development_effort/address-outstanding-issues-toolbar-and-menu-contributions[FEEP proposal page]
+
+The Item consists of the following bugs:
+
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=410432[Bug 410432 - [Contributions] [Compatibility] Different behaviors for toolbar contribution through factories with bundle and target platform]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=354538[Bug 354538 - [Contributions] [Compatibility] Window menus and toolbars leaked after having been closed]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=392457[Bug 392457 - [Contributions] cannot create dynamic Status bar controls in eclipse 4.2]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=384351[Bug 384351 - [Contributions] Compatibility problem: Menu- and toolbar are not empty in Eclipse 4.2 even if configured via WorkbenchWindowAdvisor]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=384349[Bug 384349 - [Contributions] New Toolbar in Eclipse 4.2 with Resume, Step Into, ... is lost after restoring the perspective]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=345762[Bug 345762 - [Contributions] Tool bar in the photo demo's tab folder looks awful ]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=386743[Bug 386743 - [Contributions] Workbench window toolbar has rendering bugs]
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=374894[Bug 374894 - [ActionSets] [Contributions] WWinPluginActions need to clean up on part close]
