@@ -1,0 +1,6 @@
+= Eclipse WTP
+
+WTP is a bunch of subprojects, some are https://git.eclipse.org/r/#/admin/projects/?filter=webtools[gerrit-enabled] and some are not.
+
+ WTP.SSE is moving to Gerrit, tracked by https://bugs.eclipse.org/bugs/show_bug.cgi?id=480382[bug 480382]
+ most of the information to access the WTP repo are in https://wiki.eclipse.org/WTP_Gerrit_Access[this page]
