@@ -19,6 +19,7 @@ Simple way to launch a SWT Shell
 		//
 		shell.setText("Simple SWT Shell");
 		//
+		
 		shell.open();
 		// eventloop
 		while (!shell.isDisposed()) {
@@ -31,8 +32,7 @@ Simple way to launch a SWT Shell
 	}
 
 
-
-Base exampe to launch a Composite with JFace components.
+Base example to launch a Composite with JFace components.
 
 
 

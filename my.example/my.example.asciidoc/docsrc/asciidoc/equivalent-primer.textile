@@ -1,0 +1,45 @@
+h1. Hello, World!
+
+This document is an example of an "ASciiDoc":http://asciidoc.org document, with basic markup
+
+h2. Second Level Section
+
+A paragraph is one or more lines of consecutive text. 
+A "\+" preserves line break. + 
+Formatted text: *bold*,  _italics_ or @monospace@ text. 
+
+Below you see a list of items
+
+* list item 1
+* list item 2
+** list item 2.1 
+
+bc.. 
+/** Long code section, with blank lines, seen as one block only */
+public class AsciiDocTest{
+
+	AsciiDocTest(){}
+
+}
+p. 
+
+!{width:300;height:200}img/hurricane-92968_1920.jpg!
+Image, resized
+
+This is the test of the sub paragraph.
+
+This is covered elsewhere[1].
+
+h3. Additional Elements 
+
+This *paragraph* contains some _different_ styles
+
+
+
+The styles are applied to portion of text
+
+fn1. Down here, in this footnote.
+
+"Bella Ciao":url 
+
+!! 

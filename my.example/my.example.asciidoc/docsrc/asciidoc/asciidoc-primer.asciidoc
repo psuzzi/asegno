@@ -1,10 +1,27 @@
 = Hello, AsciiDoc!
 Doc Writer <psuzzi@gmail.com>
 
-An introduction to http://asciidoc.org[ASciiDoc]
+This document is an example of an http://asciidoc.org[ASciiDoc] document, with basic markup
 
-== First section
+== Second Level Section
 
-* item 1
-* item 2 
+A paragraph is one or more lines of consecutive text. 
+A "\+" preserves line break. + 
+Formatted text: *bold*,  _italics_ or  `monospace` text. 
 
+Below you see a list of items
+
+* list item 1
+* list item 2
+** list item 2.1 
+
+----
+/** Code section, this should be seen as one block only */
+public class AsciiDocTest{
+
+	AsciiDocTest(){}
+
+}
+----
+
+image::img/hurricane-92968_1920.jpg[width="300", height="200"]
