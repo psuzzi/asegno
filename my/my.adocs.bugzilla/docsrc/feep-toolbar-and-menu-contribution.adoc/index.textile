@@ -1,0 +1,7 @@
+= Address Outstanding Issues - ToolBar and Menu Contributions
+
+== References
+
+* Address Outstanding Issues - ToolBar and Menu Contributions,  https://projects.eclipse.org/development_effort/address-outstanding-issues-toolbar-and-menu-contributions[FEEP proposal page]
+
+The Item consists of the following bugs:
