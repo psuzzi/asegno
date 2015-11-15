@@ -1,6 +1,6 @@
-# asegno code examples
+# asegno code and docs
 
-Example code for Java and Eclipse tutorials from the [asegno](http://asegno.com) weblog
+Example code and documents for the [asegno](http://asegno.com) weblog
 
 # License
 [Eclipse Public License - v1.0](LICENSE) is used
