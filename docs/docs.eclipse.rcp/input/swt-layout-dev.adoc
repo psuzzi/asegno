@@ -1,0 +1,12 @@
+= SWT Layout Development
+
+[source,java]
+----
+org.eclipse.ui.internal.layout.SizeCache
+----
+
+encapsulates 
+
+
+eclipse.platform.ui
+SizeCache not used by SW
