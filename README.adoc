@@ -1,0 +1,26 @@
+= Readme
+
+---
+
+(C) Copyright Patrik Suzzi, 2015
+
+public code and documentation for link:http://www.asegno.com[asegno.com] weblog
+
+All the material under this directory is freely available, under link:https://github.com/psuzzi/asegno/blob/master/LICENSE[Eclipse Public License] - v1.0, unless otherwise specified.
+
+The link:docs[docs] here are my public notes, references, tutorials, and bug-tracks. Please, feel free to comment and give me feedback. The most useful links to documents are below:
+
+* link:docs/docs.eclipse.bugs/input/index.asc[My Bugs index]
+* link:docs/docs.eclipse.rcp/input/contribute-eclipse-source-code.asc[Contribute Eclipse E4 Source Code]
+* link:docs/docs.tech.writing/input/technical-writing-and-tools.asc[Technical writing and tools]
+
+== License
+
+All the material under this repository is under link:https://github.com/psuzzi/asegno/blob/master/LICENSE[Eclipse Public License] - v1.0, unless otherwise specified.
+
+== About
+These are some bits http://about.me/psuzzi[about.me/psuzzi].
+
+=== Useful References
+* Asciidoc: http://asciidoctor.org/docs/asciidoc-writers-guide/[writers guide]; https://powerman.name/doc/asciidoc[powerman cheats]
+
