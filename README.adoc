@@ -1,4 +1,5 @@
 = Readme
+Patrik Suzzi <psuzzi@gmail.com>
 
 ---
 
