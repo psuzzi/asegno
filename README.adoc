@@ -3,7 +3,7 @@ Patrik Suzzi <psuzzi@gmail.com>
 v0.5, 2015-12-13, Second revision
 ---
 
-(C) Copyright Patrik Suzzi, 2015
+(C) Copyright {author}, 2015
 
 public code and documentation for link:http://www.asegno.com[asegno.com] weblog
 
