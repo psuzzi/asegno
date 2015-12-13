@@ -1,6 +1,6 @@
 = Readme
 Patrik Suzzi <psuzzi@gmail.com>
-
+v0.5, 2015-12-13, Second revision
 ---
 
 (C) Copyright Patrik Suzzi, 2015
