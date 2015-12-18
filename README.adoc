@@ -3,9 +3,9 @@ Patrik Suzzi <psuzzi@gmail.com>
 v0.5, 2015-12-13, Second revision
 ---
 
-public code and documentation for link:http://www.asegno.com[asegno.com] weblog
+Public code and docs related to the link:http://www.asegno.com[asegno.com] weblog
 
-All the material under this directory is freely available, under link:https://github.com/psuzzi/asegno/blob/master/LICENSE[Eclipse Public License] - v1.0, unless otherwise specified.
+The the material under this directory is freely available, under link:https://github.com/psuzzi/asegno/blob/master/LICENSE[Eclipse Public License] - v1.0, unless otherwise specified.
 
 The link:docs[docs] here are my public notes, references, tutorials, and bug-tracks. Please, feel free to comment and give me feedback. The most useful links to documents are below:
 
