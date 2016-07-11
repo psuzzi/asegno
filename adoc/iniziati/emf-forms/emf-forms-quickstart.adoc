@@ -1,0 +1,88 @@
+= Emf Forms Quick Start
+Patrik Suzzi <psuzzi@gmail.com>
+v1.0, 2016-06-29
+//:toc: macro
+//:toc-title: Contents
+:doctype: article
+//:source-highlighter: pygments
+:source-highlighter: coderay
+:listing-caption: Listing
+// Uncomment next line to set page size (default is Letter)
+:pdf-page-size: A4
+// other attributes
+ifdef::backend-pdf[:notitle:]
+
+ifdef::backend-pdf[]
+[discrete]
+= {doctitle}
+endif::[]
+
+QuickStart
+
+== Prepare your IDE
+
+Get Latest Eclipse Modeling, which already contains EMF Forms.
+
+To install EMF Forms in your custom Eclipse, open _Help -> Install New Software_;
+select the latest update site from https://www.eclipse.org/ecp/emfforms/download.html[here],
+e.g.: http://download.eclipse.org/ecp/releases/releases_19/; add the update site;
+and install the _ECP SDK_ Feature.
+As an example, below you see the feature content for v.1.9
+
+image::images\ECP-package-content.png[]
+
+== Create a Model
+
+Create an _Empty EMF Project_ with the name _org.eclipse.example.bowlingmodel_.
+Select the model folder, add a new _Ecore Model_, named _bowling.ecore_.
+Open the _.ecore_ model with the model editor.
+
+Double click on the root node of the _.ecore_ model, to open Properties.
+Select the empty root node, name it *bowling*; then set the NS prefix to
+*org.eclipse.example.bowling*, and the NS URI to *+++http://org/eclipse/example/bowling+++*.
+
+image:images\ecore-model-first-edit.png[]
+
+=== Edit the model
+
+Select the root model, and add a new child class called _Player_.
+Add to the class an attribute called _name_, of type _EString_;
+and an attribute named _dateOfBirth_, of type _EDate_.
+
+Add a new model child class named _League_.
+Add to the class an attribute called _name_, of type _EString_;
+and a new reference named _players_ with EType _Player_;
+upper bound _-1_, and containtment = true.
+
+image:images\ecore-model-edit-1-player-and-league[]
+
+=== Generate the model
+
+Now, select the model folder and create a new EMF Generator model.
+In the wizard, the _model_ folder is selected.
+Give _bowling.genmodel_ as file name;
+select _Ecore model_ as model importer
+and _Browse the workspace.._ to select _bowling.ecore_ as model.
+
+
+
+Update
+
+Note that the property “Container” will automatically be set to True.
+> This is not working.
+delete and recreate
+
+
+
+
+
+
+
+
+References
+
+http://eclipsesource.com/blogs/tutorials/getting-started-with-EMF-Forms/[]
+
+Written with http://www.methods.co.nz/asciidoc/userguide.html[AsciiDoc].
+See http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[ref],
+also https://powerman.name/doc/asciidoc[man].

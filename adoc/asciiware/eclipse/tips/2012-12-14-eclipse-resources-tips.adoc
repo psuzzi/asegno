@@ -1,0 +1,83 @@
+= Eclipse tips
+Patrik Suzzi <psuzzi@gmail.com>
+v1.0, 2015-12-15
+:toc-title: Contents
+
+Some Eclipse tips are collected below.
+
+== Eclipse resources
+
+So, you want to put a file in your eclipse plugin and read its content ?
+
+The first thing is consider if you just need to read a file ot you also need to write it.
+
+Eclipse plug-ins are usually packages as jars, and it is easier to just read a packaged resource through an inputstream, rather than shaping the bundle as dir and read/write the file.
+
+=== Read From InputStream
+
+If you just need to read the file content, the easy way is to read the content from an `InputStream`. +
+Assuming your file path is `resources/file.txt`, and the plugin id is `my.bundle.id`, you can get a reference to the resource with the following URL String: `"platform:/plugin/my.bundle.id/resources/file.txt"`
+
+[source,java]
+----
+// get resource across different plugins, using the platform:/ URL scheme
+URL url = new URL("platform:/plugin/my.bundle.id/resources/file.txt");
+InputStream inStream = url.openConnection().getInputStream();
+----
+
+If you need to read the resource from inside your plugin only, you can also simply avoid the URL scheme, as you can use simply use the classloader directly.
+
+[source,java]
+----
+// get resource stream in the current bundle
+InputStream inStream = myClass.getResourceAsStream("resources/file.txt");
+----
+
+=== Read/Write From Files
+
+Eclipse plug-ins are packaged by default into jar files. If you need file access to plugin resources, for read/write content, you will need to declare the plugin needs to be packaged as a directory
+
+.MANIFEST.MF
+[source,properties]
+----
+Bundle-SymbolicName: my.test.bundle
+...
+Eclipse-BundleShape: dir <1>
+----
+<1> The plugin will be bundled as dir.
+
+* declare the plugin is packag
+
+Now, you can easily access resources inside the plugin as you would do with simple files.
+
+[source,java]
+----
+// file from a "dir-bundled" plugin, using the platform:/ URL scheme
+URL url = new URL("platform:/plugin/my.bundle.id/resources/file.txt");
+File resFile = new File(FileLocator.resolve(url).toURI());
+----
+
+
+
+== References
+
+
+* http://help.eclipse.org/mars/topic/org.eclipse.platform.doc.isv/reference/misc/bundle_manifest.html?cp=2_1_5_10[OSGi Bundle Manifest], Eclipse Mars Help
+* http://eclipsesource.com/blogs/2009/01/20/tip-eclipse-bundleshape/[Tip: Eclipse-BundleShape], EclipseSource
+* http://stackoverflow.com/questions/14584968/reading-from-properties-file-in-eclipse-plugin[reading from properties file in eclipse plugin], StackOverflow
+* http://blog.vogella.com/2010/07/06/reading-resources-from-plugin/[Reading resources from a Eclipse plugin], Vogella
+
+
+
+
+
+
+
+
+== Eclipse Services
+
+
+[source, java]
+----
+
+----

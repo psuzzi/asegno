@@ -1,0 +1,135 @@
+= Oomph Setup JSDT Development Environment
+Patrik Suzzi <psuzzi@gmail.com>
+v1.0, 2016-06-22
+//:toc: macro
+//:toc-title: Contents
+:doctype: article
+//:source-highlighter: pygments
+:source-highlighter: coderay
+:listing-caption: Listing
+// Uncomment next line to set page size (default is Letter)
+:pdf-page-size: A4
+// other attributes
+ifdef::backend-pdf[:notitle:]
+
+ifdef::backend-pdf[]
+[discrete]
+= {doctitle}
+endif::[]
+
+*_Case study_*: https://bugs.eclipse.org/bugs/show_bug.cgi?id=488343[Bug 488343].
+
+== Get the custom .setup
+
+Open https://bugs.eclipse.org/bugs/show_bug.cgi?id=488343[Bug 488343]; check the
+related https://git.eclipse.org/r/#/c/75884/[Gerrit change], and download the
+zip containing the setup file.
+
+Extract the archive, locate the Oomph .setup file, and launch Oomph
+
+== Run Oomph
+
+Launch the Eclipse Installer
+.footnote:[You should download and install the https://wiki.eclipse.org/Eclipse_Installer[Oomph installer]]
+, and then switch to advanced mode.
+
+image::images\oomph-installer-advanced-mode.png[]
+
+In the next page you can select the base eclipse, to use for development.
+Choose _Eclipse for RCP and RAP_. Plus, you're suggested to use the 64bit version,
+to avoid memory limitation issues.
+
+image::images\oomph-product-selection.png[]
+
+In the Next page you choose which projects you will contribute to.
+
+== Use custom .setup
+
+Currently, the JSDT .setup model is not in the Oomph public catalog.
+To use the setup, drag and drop the .setup file into the _User_ folder.
+
+image::images\add-setup-to-user-projects.png[]
+
+Then, under _User_, you can see the _WTP_ subtree. Identify the _JSDT_
+node; check its checkbox and verify the project is added.
+
+image::images\oomph-select-project-to-provision.png[]
+
+Now press _Next_, and proceed to the variables page.
+
+== Setup variables and install
+Check the _Show all variables_ checkbox,
+so you can check and configure the parameters for your installation, e.g.:
+_installation location_, _git rules_, _Gerrit repo_, _Eclipse userid_ etc..
+
+image::images\oomph-variables.png[]
+
+In the next page press _Finish_ to start downloading and installing the bundles.
+The download is fast, as with the bundle pool, Oomph never downloads the same bundle twice.
+
+While Oomph is completing the install, you will see the new instance of Eclipse
+popping up, and completing the setup tasks, including getting bundles, and
+fetching source code from Git/Gerrit.
+
+image::images\oomph-new-eclipse-installed-finishing-setup.png[]
+
+== First run of your new IDE
+
+When the setup is complete, close the welcome window.
+In the workspace you will see the list of JSDT projects, cloned from Git/Gerrit.
+
+image::images\oomph-jsdt-setup-done-see-development-environment.png[]
+
+Look in the error log, where you can see errors related to a missing API Baseline.
+Fix this in _Preferences > Plug-in Development > API Baseline_, by adding an
+existing Eclipse Neon installation directory as target Baseline.
+
+image::images\JSDT-dev-env-add-baseline.png[]
+
+After this you're ready to launch an Eclipse product.
+
+== Launch Target Configuration
+
+Open Run.. > Run Configuration and create a new Eclipse Application configuration.
+Switch to the Plug-ins tab, and select to launch with _Plug-ins selected below only_
+.footnote:[this give fine control in adding/removing plug-ins from the configuration.]
+
+image::images\new-run-configuration-based-on-plug-ins.png[]
+
+After this, remove the _*test*_ plug-ins in the workspace from the launch configuration;
+de-select the _Include optional dependencies..._ checkbox;
+click the _Add Required Plug-ins_ button and, Finally, _Run_ the launch configuration.
+
+image::images\eclipse-run-custom-launch-configuration.png[]
+
+== Run and Check the Target application
+
+Now the target application is running, we can check that contains all the JSDT features
+The easy way to check this, is creating a javascript project.
+
+image::images\verify-target-application-create-javascript-project.png[]
+
+*_Update_* : If you see some issue in running the target application,
+this means there are some adjustments we need to do to the setup file.
+
+== Conclusions
+
+Creating an Oomph .setup is initially hard. But if the team manage to have a
+good setup, this will make easier to new developers to contribute.
+
+Indeed, using an Oomph setup is pretty easy, since the first time you're using it.
+It just take a little time to get used to concepts like _bundle pools_; _.setup files_;
+_user variables_; and after a couple of runs, it is actually easier to use it
+rather than explaining how it works.
+
+Many thanks to _Esteban Dugueperoux_, who contributed the initial setup,
+and to all the other Contributors and doc writers, who are making Eclipse better.
+
+Hope you enjoyed this walkthrough. Soon I'm going to make this document available
+under EPL both on the JSDT website and on my personal blog.
+
+=== References
+
+Written with http://www.methods.co.nz/asciidoc/userguide.html[AsciiDoc].
+See http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[ref],
+also https://powerman.name/doc/asciidoc[man].

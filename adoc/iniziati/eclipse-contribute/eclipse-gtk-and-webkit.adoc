@@ -1,0 +1,19 @@
+= Eclipse GTK and WebKit
+
+*_About_*: I saw many errors with Eclipse, GTK and WebKit in early 2016.
+This article explains a how to resolve troubles
+
+= GTK
+
+First check your GTK version. To discover i
+
+With GTK 3.20 +, I suggest to Use Eclipse Neon.
+
+
+
+
+
+== References
+
+* https://coffeeorientedprogramming.wordpress.com/2014/10/27/how-to-tell-if-you-are-running-eclipse-on-gtk2-or-on-gtk3/[How to tell if you are running Eclipse on Gtk2 or on Gtk3], by Leo Ufimtsev
+* https://bugs.eclipse.org/bugs/show_bug.cgi?id=492371[Bug 492371] - [GTK3] Issues affecting Ubuntu 16.04

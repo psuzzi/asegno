@@ -1,0 +1,82 @@
+= JPA Entity List to Filter With JFace Combo
+Patrik Suzzi <psuzzi@gmail.com>
+
+
+The *idea* :
+
+* List JPA Entities through a JPQL Query on DB
+* Feed a JFace
+
+
+== List DB Objects
+
+Here is how to list a series of object in the db
+
+[source,java]
+----
+@Entity(name = "WWB_CWEAR_COEFFICIENTS")
+public class WwbCasingWearCoefficients extends AbstractBean {
+
+  /** JPQL Query to return the full list of Coefficients. */
+  public static List<WwbCasingWearCoefficients> list() {
+    return EDMEntityManager
+      .getEntityManager()
+      .createQuery("SELECT c FROM WWB_CWEAR_COEFFICIENTS c",
+        WwbCasingWearCoefficients.class).getResultList();
+  }
+
+  //...
+
+}
+----
+
+== SWT Combo with JFace Filter
+
+image:images\comboviewer-databinding.png[]
+
+=== Combo with ComboViewer
+
+
+
+
+
+
+
+This is how to setup a Combo with a ComboViewer
+
+[source, java]
+----
+ComboViewer cwComboViewer = new ComboViewer(grpParent, SWT.NONE);
+Combo cwCombo = cwComboViewer.getCombo();
+
+cwComboViewer.setLayoutData(new GridData(SWT.FILL,SWT.CENTER, true, false, 2, 1));
+cwComboViewer.setLabelProvider(new ViewerLabelProvider());
+cwComboViewer.setContentProvider(new ContentProvider());
+----
+
+In addition, this is how we react to the enter keypress
+
+[source, java]
+----
+// listen to enter keypreee
+combo.addListener (SWT.DefaultSelection, new Listener () {
+  @Override
+  public void handleEvent (Event e) {
+    System.out.println (e.widget + " - Default Selection");
+  }
+});
+----
+
+
+
+new combo
+set items
+filter and select
+databinding
+
+References
+
+* ObjectDB, http://www.objectdb.com/java/jpa/query/jpql/select[jpa/query/jpql/select]
+* Stackoverflow, http://stackoverflow.com/questions/23894512/how-to-set-desired-selection-in-comboviewer-programatically[... Comboviewer programmatically]
+* Eclipse, https://www.eclipse.org/swt/snippets/#combo[swt/snippets/#combo]
+* Vogella, http://www.vogella.com/tutorials/EclipseDataBinding/article.html[JFace Data Binding]

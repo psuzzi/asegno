@@ -1,0 +1,11 @@
+Eclipse Key Bindings
+====================
+Patrik Suzzi <psuzzi@gmail.com>
+:doctype: book
+//:source-highlighter: pygments
+:source-highlighter: coderay
+:listing-caption: Listing
+// Uncomment next line to set page size (default is Letter)
+:pdf-page-size: A4
+
+include::key-bindings-extend-copy-command.adoc[]

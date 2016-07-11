@@ -1,0 +1,10 @@
+Gradle Quickstart
+======
+
+install:
+
+* http://gradle.org/post-download-gradle/[Download gradle] and unzip the content in a local directoty 
+* add the `GRADLE_HOME` environment variable pointing to the folder
+* add `GRADLE_HOME\bin` to the path
+
+include:

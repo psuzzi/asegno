@@ -1,0 +1,35 @@
+= JFace content provider datadinding
+
+
+
+This is how to setup a Combo with a ComboViewer
+
+[source, java]
+----
+ComboViewer cwComboViewer = new ComboViewer(grpParent, SWT.NONE);
+Combo cwCombo = cwComboViewer.getCombo();
+
+cwComboViewer.setLayoutData(new GridData(SWT.FILL,SWT.CENTER, true, false, 2, 1));
+cwComboViewer.setLabelProvider(new ViewerLabelProvider());
+cwComboViewer.setContentProvider(new ContentProvider());
+----
+
+In addition, this is how we react to the enter keypress
+
+[source, java]
+----
+// listen to enter keypreee
+combo.addListener (SWT.DefaultSelection, new Listener () {
+  @Override
+  public void handleEvent (Event e) {
+    System.out.println (e.widget + " - Default Selection");
+  }
+});
+----
+
+
+
+new combo
+set items
+filter and select
+databinding

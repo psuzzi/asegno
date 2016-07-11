@@ -1,0 +1,34 @@
+= Indexing textual files in Windows 10
+Patrik Suzzi <psuzzi@gmail.com>
+v.1.0, 2015-12-18, Frist revision
+
+If windows search doesn't find the file you need, it's time to change advanced indexing options.
+
+== Window is not indexing all textual files
+
+By default, windows is not indexing all textual files, but only those with known extensions
+
+=== *I want full text search on textual files*
+
+I started writing my documents in asciidoc, that is a textual format. Many of my documents now have the ".adoc" extension. When I search in folders, windows can not find my document files.
+
+image:images\2015-12-19-windows-10-indexing.gif[]
+
+*Windows is not indexing unknown filetypes*
+
+Windows is not indexing my textual files. The ".adoc" extension is not registered to be indexed, an he doesn't know if the content is textual or not.
+
+== Advanced indexing options in Windows
+
+To have full-text search on all my textual documents, I'll need to use advancing indexing options, to register extensions and to specify
+
+=== Indexing Options Advanced
+To solve, search for windows indexing options
+
+image:images\indexing-options-windows-10.png[]
+
+Open the Advanced Options, and add the sa
+
+image:images\add-asciidoc-files-full-tex-indexing.png[]
+
+== References

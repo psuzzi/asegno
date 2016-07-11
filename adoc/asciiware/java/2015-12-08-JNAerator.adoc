@@ -1,0 +1,38 @@
+= JNAerator
+Patrik Suzzi <psuzzi@gmail.com>
+
+A tool to generate the java code needed to call native libraries written in C / C++ and Objective-C.
+
+== Intro
+
+JNAerator parses C-like header files and generates the corresponding interfaces to call natives, targetting BridJ, JNA or node.js runtimes.
+
+In this example we create a simple C-style library, we generate 
+
+In this tutorial we see how to generate  asinple binding for
+generates complete native bindings for C, C++ and Objective-C libraries, targetting BridJ, JNA or node.js runtimes.
+
+A comprehensive documentation is available on its Wiki.
+
+Main referencesJNAerator generates complete native bindings for C, C++ and Objective-C libraries, targetting BridJ, JNA or node.js runtimes.
+
+== Main references
+
+The project references are a bit scattered. ThisThis document is updated to December 2015:
+
+Source Code:: Currently the code is hosted on github. it was previously hosted on another github project, and earlier, it was hosted on googlecode.
+- Currently the source code is hosted and mantained on github, at http://github.com/nativelibs4java/JNAerator[github.com/nativelibs4java/JNAerator].
+- it was prevoiusly hosted on http://github.com/ochafik/nativelibs4java[github.com/ochafik/nativelibs4java]
+- earlier on it was hosted on http://jnaerator.googlecode.com[jnaerator.googlecode.com]
+- The was hosted on googlecode, until 2013, but now that code is
+- Documentation a
+- Code and artifacts at old repository are obsolete or, better, some update might be missing.
+
+-
+
+For more information you can see the old readonly wiki at https://code.google.com/p/jnaerator/wiki/JNAeratorFAQ[Old readonly wiki on google.code]
+-
+
+
+https://code.google.com/p/jnaerator/wiki/Documentation?tm=6
+The project is now hosted on http://github.com/nativelibs4java/JNAerator[GitHub - JNAerator]

@@ -1,0 +1,68 @@
+= Professional Eclipse RCP Application
+
+*_Prerequisites_*: You know Java and the basics of Eclipse
+*_Takeaways_*: Build scheleton of a professional RCP Application
+
+* new application
+* understand and edit UI
+* add behavior 
+*
+
+
+== New application
+
+=== Create a new project
+
+Press _(Ctrl+N)_,
+Select _Plug-in Project_, click _Next_; +
+Type `com.asciiware.demo.professional`as project name, _Next_; +
+Select "yes" in _... create a rich client application_, _Next_ +
+Select _Eclipse 4 RCP application_, _Next_ +
+Type *"E4 Demo Professional"* as window title, check _Create sample content_ and _Add Life cycle class_, _Finish_
+
+=== Launch the application
+
+Open the product file _com.asciiware.demo.professional.product_,
+click the link _Launch an Eclipse Application_ and
+See the running application.
+
+== UI
+
+=== Application Model
+
+E4 Applications are modeled by an EMF model, that you can edit using the *Application Model Editor*.
+
+Open *Application.e4xmi* and observe your application model.
+
+* _Add-ons_ are custom classes participating in Dependency Injection .footnote:[E.g., access the context or interact with services]
+* _Binding Contexts_ and _Tables_ are related to key binding
+* _Handlers_ and _Commands_ represent implementation and declaration of actions in the application (see Note).
+* _Windows and Dialogs_ is the root for the UI content
+** _Trimmed Window_ the window containing the application
+*** _Main Menu_ defines the menu
+*** _Controls_ contains the main UI, usually starting from _Perspective_
+*** _TrimBars_ contains toolbars
+* etc..
+
+
+NOTE: *The _"Command"_ Pattern*: A Command is an abstract declaration of some semantic _behavior_ associated with a _command id_. A Handler is a concrete implementation, usually referencing its implementing class and the _command id_. The UI elements triggering actions, normally, should refer to the _command id_.
+
+== Edit UI, Add Part
+
+In the _Application Model_, open the _Controls_ node, and drill down until you find the first _Part Sash Container_.
+Select the _Part Sash_, Right-click on it, and select _Add Child > Part Stack_.
+Select the _Part Stack_ Right-click on it, and select _Add Child > Part_
+
+A part is a visible portion of user interface.
+Now we edit the part to show add it.
+
+
+In the new
+
+== Application Model Spies
+
+You can get in
+
+== Demo
+
+== References

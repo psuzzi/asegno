@@ -1,0 +1,21 @@
+= Setup
+
+
+== platform SDK-I20160119
+
+C:\Users\psuzzi\Google Drive\2016\01\SDK-I20160119
+
+http://download.eclipse.org/eclipse/downloads/drops4/I20160119-0800/
+
+http://download.eclipse.org/eclipse/downloads/drops4/I20160119-0800/download.php?dropFile=eclipse-SDK-I20160119-0800-win32.zip[eclipse-SDK-I20160119-0800-win32.zip]
+
+
+
+C:\eclipse\ide\platform\eclipse-SDK-I20160119-0800-win32\eclipse
+C:\eclipse\workspace\platform\SDK-I20160119
+
+
+* https://wiki.eclipse.org/Platform_UI/How_to_Contribute[Platform_UI/How_to_Contribute]
+** http://git.eclipse.org/c/platform/eclipse.platform.ui.git/plain/releng/org.eclipse.ui.releng/platformUiTools.p2f[platformUiTools.p2f]
+
+** http://git.eclipse.org/c/platform/eclipse.platform.ui.git/plain/releng/org.eclipse.ui.releng/platformUiProjectsGerrit.psf[platformUiProjectsGerrit.psf]
