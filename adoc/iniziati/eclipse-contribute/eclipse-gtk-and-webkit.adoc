@@ -5,6 +5,19 @@ This article explains a how to resolve troubles
 
 = GTK
 
+Check which GTK version you're running in Eclipse, from menu:
+_Help > About_ click on _Installation Details_ and select _Configuration_ Tab.
+
+Scroll down, you'll see something like:
+org.eclipse.swt.internal.gtk.version=3.14.12
+
+Which version is in your system ?
+
+
+
+=
+
+pkg-config
 First check your GTK version. To discover i
 
 With GTK 3.20 +, I suggest to Use Eclipse Neon.

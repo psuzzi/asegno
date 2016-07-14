@@ -1,5 +1,13 @@
-= Setup
+= Setup Platform UI Dev Env, the old way.
 
+This page explains how to setup the Eclipse Platform UI development environment,
+in the old way: _not_ using Oomph.
+
+get
+
+===
+
+According to _Platform UI How to contribute_, the old way to setup r
 
 == platform SDK-I20160119
 

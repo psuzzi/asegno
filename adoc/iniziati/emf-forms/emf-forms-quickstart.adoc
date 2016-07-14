@@ -54,7 +54,7 @@ Add to the class an attribute called _name_, of type _EString_;
 and a new reference named _players_ with EType _Player_;
 upper bound _-1_, and containtment = true.
 
-image:images\ecore-model-edit-1-player-and-league[]
+image:images\ecore-model-edit-1-player-and-league.png[]
 
 === Generate the model
 
@@ -64,7 +64,7 @@ Give _bowling.genmodel_ as file name;
 select _Ecore model_ as model importer
 and _Browse the workspace.._ to select _bowling.ecore_ as model.
 
-
+A
 
 Update
 

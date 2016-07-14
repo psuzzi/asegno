@@ -1,0 +1,8 @@
+= Eclipse Professional
+
+* RCP Application
+* EMF Modeling
+* Rapid UI Development
+* DataBase
+* Web App
+* Mobile
