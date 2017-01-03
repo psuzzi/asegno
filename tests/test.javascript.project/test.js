@@ -1,5 +1,5 @@
 /**
- * BLA BLA BLA test.js
+ * test.js
  */
 
 function test() {
